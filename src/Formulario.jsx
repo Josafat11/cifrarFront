@@ -7,7 +7,7 @@ const FormularioHash = () => {
   const manejarSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://back-cifrar-oxod5r2se-jose-josafats-projects.vercel.app/api/hash/md5', {
+      const response = await fetch('https://back-cifrar.vercel.app/api/hash/md5', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

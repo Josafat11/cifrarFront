@@ -14,7 +14,7 @@ const FormularioRSA = () => {
     console.log("cifrar:", texto);
     console.log(" utilizada:", clavePublica);
     try {
-      const response = await fetch("https://back-cifrar-oxod5r2se-jose-josafats-projects.vercel.app/api/encrypt/rsa", {
+      const response = await fetch("https://back-cifrar.vercel.app/api/encrypt/rsa", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const FormularioRSA = () => {
     console.log("Texto cifrado a descifrar:", textoCifrado);
     console.log("Clave privada utilizada:", clavePrivada);
     try {
-      const response = await fetch("https://back-cifrar-oxod5r2se-jose-josafats-projects.vercel.app/api/decrypt/rsa", {
+      const response = await fetch("https://back-cifrar.vercel.app/api/decrypt/rsa", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
